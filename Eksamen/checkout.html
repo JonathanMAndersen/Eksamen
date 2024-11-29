@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nettbutikk</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <form class="søk">
+                <label for="search">Søk</label>
+                <input type="search" placeholder="Søk etter produkter..." id="search">
+                <input type="submit" value="søk">
+            </form>
+            <ul class="meny">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkt-liste">Produkter</a></li>
+                <li><a href="index.html" class="logo">LOGO</a></li>
+                <li><a href="#kategori-liste">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            <ul class="ikoner">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1>Kasse</h1>
+            <section>
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+                <article class="hovedbilde">
+                    <a href="product.html"><img src="img/zalando_kjole.webp" alt="Produktbilde"></a>
+                    <section class="produkt-info">
+                        <h3>Produktnavn</h3>
+                        <p>K 1 999</p>
+                        <p>Farge: beige</p>
+                    </section>
+                </article>
+                <article class="hovedbilde">
+                    <a href="product.html"><img src="img/zalando_kjole.webp" alt="Produktbilde"></a>
+                    <section class="product-info">
+                        <h3>Produktnavn</h3>
+                        <p>K 1 999</p>
+                        <p>Farge: beige</p>
+                    </section>
+                </article>
+                <article class="hovedbilde">
+                    <a href="product.html"><img src="img/zalando_kjole.webp" alt="Produktbilde"></a>
+                    <section class="product-info">
+                        <h3>Produktnavn</h3>
+                        <p>K 1 999</p>
+                        <p>Farge: beige</p>
+                    </section>
+                </article>
+            </section>
+            <section>
+                <h2>2. DINE OPPLYSNINGER</h2>
+                <form class="opplysninger">
+                    <label for="fornavn">Fornavn*</label>
+                    <input type="text" name="fornavn" placeholder="Fornavn*" id="fornavn" required>
+    
+                    <label for="etternavn">Etternavn*</label>
+                    <input type="text" name="etternavn" placeholder="Etternavn*" id="etternavn" required>
+    
+                    <label for="gateadresse">Gateadresse*</label>
+                    <input type="text" name="gateadresse" placeholder="Gateadresse*" id="gateadresse" required>
+    
+                    <label for="postnummer">Postnummer*</label>
+                    <input type="text" name="postnummer" placeholder="Postnummer*" id="postnummer" required>
+    
+                    <label for="poststed">Poststed*</label>
+                    <input type="text" name="poststed" placeholder="Poststed*" id="poststed" required>
+    
+                    <button type="submit">Lagre</button>
+                    <button type="reset">Avbryt</button>
+                </form>
+            </section>
+            <section>
+                <h2>3. LEVERING</h2>
+                <form class="levering">
+                    <h3>LEVERINGSVALG</h3>
+                    <label>
+                        <input type="radio" name="levering" required>  
+                        Ekspress hjemlevering
+                    </label>
+                    <label>
+                        <input type="radio" name="levering" required>
+                        Ekspress Pakke til utleveringssted
+                    </label>
+                    <label>
+                        <input type="radio" name="levering" required>
+                        Standard hjemlevering
+                    </label>
+                </form>
+            </section>
+            <section>
+                <h2>4. BETALING</h2>
+                <h3>BETAL MED KORT</h3>
+                <form class="betaling">
+                    <label for="kortnummer">Kortnummer*</label>
+                    <input type="text" name="kortnummer" placeholder="0000 0000 0000 0000" id="kortnummer" required>
+    
+                    <label for="utløpsdato">Utløpsdato*</label>
+                    <input type="date" name="utløpsdato" id="utløpsdato" required>
+    
+                    <label for="cvc">CVC/CVV*</label>
+                    <input type="text" name="cvc" placeholder="CVC/CVV" id="cvc" required>
+    
+                    <p>Å betale inkl. mva: 1 199 kr</p>
+                    <button type="submit">Fullfør kjøp</button>
+                </form>
+                <form class="checkbox">
+                    <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                    <label>
+                        <input type="checkbox">
+                        Ja, jeg godtar vilkårene
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        Ja takk! Send nyhetsbrev til meg
+                    </label>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h2>LOGO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </section>
+            <section id="kontakt">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i>Adresse: Storgata 3, 1767 HALDEN</li> 
+                    <li><i class="fa-solid fa-phone"></i>Telefon: 49 24 00 90</li>
+                    <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
+                    <li><i class="fa-solid fa-clock"></i>Åpningstider: 08:00 - 15:00</li>
+                </ul>
+            </section>
+            <section class="snarveier">
+                <h3>Snarveier</h3>
+                <ul>
+                    <li><a href="#produkt-liste">Produkter</a></li>
+                    <li><a href="#kategori-liste">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                </ul>
+            </section>
+            <section class="følg-oss">
+                <h3>Følg oss</h3>
+                <ul>
+                    <li><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+    </html>
